@@ -6,19 +6,19 @@
   "author": "Matt Bornski <matt@applovin.com>",
   "main": "lib/index.js",
   "directories" : {
-    "lib" : "lib",
-    "test" : "test",
+    "lib": "lib",
+    "test": "test"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/applovin/nodejs-mupdate"
   },
   "devDependencies" : {
-    "expresso" : "0.7.x"
+    "expresso": "0.7.x"
   },
   "scripts": {
     "test": "expresso"
-  }, 
+  },
   "engine": {
     "node": ">=0.4"
   }
