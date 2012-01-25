@@ -22,11 +22,13 @@ exports['set'] = function () {
           'bar': {
             '$each': ['---', 'bar'],
           },
+          'extra': 'read all about it',
       },
   }
   var expected = {
     'foo': ['foo', 'fu', 'FU'],
     'bar': ['bar', 'barre', '---'],
+    'extra': ['read all about it'],
   };
   var result = mupdate.update(local, update);
   
