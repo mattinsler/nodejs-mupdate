@@ -1,7 +1,7 @@
 {
   "name": "mupdate",
   "description": "A NodeJS library which can parse Mongo update modifier command and apply them to local objects",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/applovin/nodejs-mupdate",
   "author": "Matt Bornski <matt@applovin.com>",
   "main": "lib/index.js",
