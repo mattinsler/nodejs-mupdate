@@ -1,4 +1,4 @@
-# mupdate [![Build Status](https://secure.travis-ci.org/mattbornski/nodejs-mupdate.png)](http://travis-ci.org/mattbornski/nodejs-mupdate)
+# mupdate [![Build Status](http://secure.travis-ci.org/AppLovin/nodejs-mupdate.png)](http://travis-ci.org/AppLovin/nodejs-mupdate)
 
 A NodeJS library which can parse Mongo update modifier command and apply them to local objects.
 
