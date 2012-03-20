@@ -23,6 +23,7 @@ exports['set'] = function () {
       '$set': {
           'foo':'bar none',
           'deeper.foo': 'bar one',
+          'list2': ['fooer', 'barrer'],
       },
   }
   var expected = {
@@ -31,6 +32,7 @@ exports['set'] = function () {
         'foo': 'bar one',
     },
     'list': ['foo', 'bar'],
+    'list2': ['fooer', 'barrer'],
   };
   var result = mupdate.update(local, update);
   
