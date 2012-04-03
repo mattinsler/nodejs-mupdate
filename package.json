@@ -3,7 +3,8 @@
   "description": "A NodeJS library which can parse Mongo update modifier command and apply them to local objects",
   "version": "0.1.3",
   "homepage": "https://github.com/applovin/nodejs-mupdate",
-  "author": "Matt Bornski <matt@applovin.com>",
+  "author": "mattbornski",
+  "keywords": ["mongo", "mongodb", "update", "upsert", "cache"],
   "main": "lib/index.js",
   "directories" : {
     "lib": "lib",
@@ -13,14 +14,17 @@
     "type": "git",
     "url": "https://github.com/applovin/nodejs-mupdate"
   },
+  "bundleDependencies": [
+    "simplesets"
+  ],
   "dependencies": {
     "simplesets": "1.1.6"
   },
   "devDependencies": {
-    "expresso": "0.7.x"
+    "mocha": "0.14.x"
   },
   "scripts": {
-    "test": "expresso"
+    "test": "mocha"
   },
   "engine": {
     "node": ">=0.4"
