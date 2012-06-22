@@ -14,6 +14,7 @@ describe('$addToSet operator', function () {
     var local = {
         'foo': ['foo', 'fu'],
         'bar': ['bar', 'barre'],
+        'baz': {'a': 'b'},
     };
     var update = {
         '$addToSet': {
@@ -21,12 +22,14 @@ describe('$addToSet operator', function () {
             'bar': {
               '$each': ['---', 'bar'],
             },
+            'baz': 'stomp',
             'extra': 'read all about it',
         },
     }
     var expected = {
       'foo': ['foo', 'fu', 'FU'],
       'bar': ['bar', 'barre', '---'],
+      'baz': ['stomp'],
       'extra': ['read all about it'],
     };
     var result = mupdate.update(local, update);
